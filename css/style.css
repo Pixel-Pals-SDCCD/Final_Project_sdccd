@@ -1,0 +1,421 @@
+
+/* General*/
+* {
+    box-sizing: border-box;
+}
+
+/*Typography*/
+
+h1 {
+    color: #FFFF;
+    font-size: 61px;
+    font-family: "Manrope", sans-serif;
+}
+
+h2 {
+    font-size: 49px;
+    font-family: "Manrope", sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: "manrope", sans-serif;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Inter, sans-serif";
+}
+
+/*Container*/
+
+.mc-container {
+    padding: 100px 5%;
+}
+
+.content-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1280px;
+    align-items: center;
+    justify-self: center;
+    gap: 25px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+
+.content-section h4 {
+    color: #0e474a;
+}
+
+.list-items {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*Backgrounds*/
+
+.dark-pattern {
+    background-image: url(/Images/Backgrounds/water\ background\ pattern\ dark.svg);
+}
+
+.light-pattern {
+    background-image: url(/Images/Backgrounds/water\ background\ pattern.svg);
+}
+
+/*Headline types*/
+
+.title-centered {
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+.title-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eyebrow {
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.eyebrow-light {
+    color: #FFFFFF;
+}
+
+.eyebrow-dark {
+    color: #0e474a;
+}
+
+/* Headline font Style*/
+.title-red {
+    color: #BB2421;
+}
+
+.title-green {
+    color: #0e474a;
+}
+
+.title-white {
+    color: #FFFF;
+}
+
+/*--Buttons--*/
+
+.primary-button {
+    background-color: #BB2421;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: #FFFF;
+}
+
+a.primary-button {
+    text-decoration: none;
+}
+
+.secondary-button {
+    background-color: #0e474a;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: #FFFF;
+}
+
+a.secondary-button {
+    text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+    background-image: url(/Images/Hero/commercial-office-cleaning-team-san-diego-ca.webp);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+}
+
+.hero p {
+    color: #FFFF;
+}
+
+.inner-hero-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Value Section*/
+.value-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.value-cards {
+    display: flex;
+    text-align: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.mc-card {
+    width: 300px;
+    height: 325px;
+    border: 1px solid #4444442f;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #FFFF;
+    align-content: center;
+}
+
+.card h3 {
+    color: #0e474a;
+}
+
+
+/*Services*/
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 2;
+    gap: 20px;
+}
+
+.service-card {
+    width: 100%;
+    max-width: 550px;
+    background-color: #FFFF;
+    padding: 25px;
+    border-radius: 10px;    
+    overflow: hidden;
+    color: #000000;
+}
+
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.service-card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: start;
+    text-align: start;
+}
+
+.service-card-text h3 {
+    color: #0e474a;
+}
+.service-card-text h3, 
+.service-card-text p {
+    margin: 3px 0px;
+}
+
+.service-card-text a {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*--Why Us Section--*/ 
+
+.content-section img {
+    border-radius: 10px;
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+    display: block;
+}
+
+/*--Testimonials--*/
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.testimonials-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+.testimonials-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+    width: 100%;
+    max-width: 400px;
+    background-color: #FFFFFF;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.testimonials-card i {
+    color: #FFA500;
+}
+
+.testimonial-profile {
+    display:flex;
+    align-items: center;
+    text-align: start;
+    height: auto; 
+    gap: 25px;
+}
+
+.testimonial-profile p:nth-child(2),
+.testimonial-profile p:nth-child(3) {
+    font-style: italic;
+
+}
+
+.testimonial-profile img {
+    width: 54px;
+    height: 54px;
+}
+
+.client-title h4,
+.client-title p {
+    margin: 0;
+}
+
+/*--Professional Floor Care--*/
+
+.professional-floor-care-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.professional-floor-care-content img {
+    border-radius: 20px;
+}
+
+/* footer*/
+
+.footer {
+    background-image: url(/Images/Backgrounds/water\ background\ pattern\ dark.svg);
+    color: white;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column a {
+text-decoration: none;
+color: white;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.legal-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.legal-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-decoration: underline;
+}
+
+.legal-links a {
+    text-decoration: none;
+    color: #FFFF;
+}
+
+.legal-links a:hover {
+    color: #881a18;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    
+    .title-centered h2 {
+        font-size: 39px;
+    }
+    
+    .service-box {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .content-block h2 {
+        font-size: 39px;
+    }
+
+    .content-block img {
+        margin-top: 50px;
+    }
+
+    .testimonials-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+
+}
+
+
+/*Mobile*/
+@media (max-width: 480px) {
+    .content-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .content-block h2 {
+        font-size: 39px;
+    }
+    
+}
